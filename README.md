@@ -31,17 +31,17 @@ The font includes two variants, each with romans and italics;
 two widths: Regular, and Extended; and
 five weights: Light, Normal, Medium, Bold, and Heavy.
 
-**Iosevkins**,
-: the default, is strictly monospaced, with no wide glyphs,
-  so it should be readily recognized as a mono font by FontConfig.
+#### Iosevkins:
+The default, is strictly monospaced, with no wide glyphs,
+so it should be readily recognized as a mono font by FontConfig.
 
-**Iosevkins Michi**,
-: a proportional font (or "variable pitch," as Emacs calls it)
-  intended for regular body text, rather than writing code.
+#### Iosevkins Michi:
+A proportional font (or "variable pitch," as Emacs calls it)
+intended for regular body text, rather than writing code.
 
 > [!NOTE]
 > The *Extended* width in Iosevkins is narrower
-> than the width with the same name in Iosevka.
+> than the width of the same name in Iosevka.
 > This might change when I figure out how to make Emacs
 > accept hyphenated names like "Semi-Extended."
 

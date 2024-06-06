@@ -5,4 +5,7 @@
 !/LICENSE
 !/README.md
 
+!/.github/workflows/*.yaml
+!/etc/ci/*
+
 !*.toml

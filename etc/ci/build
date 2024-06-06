@@ -1,0 +1,5 @@
+#!/bin/sh -efu
+cd lib/iosevka
+for font in "$@"; do
+	npm run build -- "ttf::$font" "ttf-unhinted::$font"
+done

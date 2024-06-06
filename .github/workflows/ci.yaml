@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'etc/ci/*'
+      - 'src/*.toml'
+  push:
+    branches:
+      - master
+    paths:
+      - 'etc/ci/*'
+      - 'src/*.toml'
+
+jobs:
+  build:
+    name: Build ${{ matrix.fontname }} Font
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        fontname:
+          - Iosevkins
+          - IosevkinsMichi
+
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ttfautohint
+
+      - uses: actions/checkout@v4
+
+      - name: Fetch Submodules
+        run:  git submodule update --init --recursive --depth 1
+
+      - name: Configure
+        run:  etc/ci/configure
+
+      - name: Build
+        run:  etc/ci/build ${{ matrix.fontname }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.fontname }}
+          path: lib/iosevka/dist/*

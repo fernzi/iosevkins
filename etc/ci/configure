@@ -1,0 +1,4 @@
+#!/bin/sh -eu
+cat src/*.toml > lib/iosevka/private-build-plans.toml
+cd lib/iosevka
+npm install

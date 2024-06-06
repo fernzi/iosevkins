@@ -1,0 +1,3 @@
+[submodule "Iosevka"]
+	path = lib/iosevka
+	url = https://github.com/be5invis/Iosevka.git

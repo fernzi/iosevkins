@@ -1,0 +1,141 @@
+[buildPlans.Iosevkins]
+family  = 'Iosevkins'
+spacing = 'fontconfig-mono'
+serifs  = 'sans'
+noCvSs  = true
+
+# Ligations:
+exportGlyphNames = false
+noLigation = true
+
+# Inherits:
+variants.inherits = 'ss12'
+
+
+[buildPlans.Iosevkins.variants.design]
+# Capitals:
+capital-d = 'standard-serifless'
+capital-g = 'toothless-corner-serifless-hooked'
+capital-m = 'hanging-serifless'
+capital-q = 'crossing-baseline'
+
+# Minuscules:
+f = 'flat-hook-serifless'
+g = 'single-storey-flat-hook-earless-corner'
+i = 'hooky'
+j = 'flat-hook-serifed'
+k = 'straight-serifless'
+l = 'serifed-flat-tailed'
+m = 'earless-corner-double-arch-serifless'
+t = 'flat-hook'
+y = 'cursive-flat-hook-serifless'
+
+# Numbers:
+zero  = 'dotted'
+one   = 'no-base'
+four  = 'semi-open-non-crossing-serifless'
+seven = 'straight-serifless'
+
+# Symbols:
+asterisk    = 'penta-low'
+underscore  = 'above-baseline'
+caret       = 'low'
+paren       = 'large-contour'
+number-sign = 'upright'
+percent     = 'rings-segmented-slash'
+pilcrow     = 'high'
+
+[buildPlans.Iosevkins.variants.italic]
+# Minuscules:
+f = 'flat-hook-tailed'
+g = 'single-storey-earless-corner'
+i = 'serifed-flat-tailed'
+j = 'serifed'
+l = 'tailed-serifed'
+t = 'bent-hook'
+y = 'cursive-serifless'
+
+
+[buildPlans.Iosevkins.weights.Light]
+shape = 300
+menu = 300
+css = 300
+
+[buildPlans.Iosevkins.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.Iosevkins.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.Iosevkins.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.Iosevkins.weights.Heavy]
+shape = 900
+menu = 900
+css = 900
+
+
+[buildPlans.Iosevkins.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.Iosevkins.widths.Extended]
+shape = 548
+menu = 7
+css = "expanded"
+
+
+[buildPlans.Iosevkins.slopes.Upright]
+angle = 0
+shape = 'upright'
+menu  = 'upright'
+css   = 'normal'
+
+[buildPlans.Iosevkins.slopes.Italic]
+angle = 9.4
+shape = 'italic'
+menu  = 'italic'
+css   = 'italic'
+
+
+[buildPlans.IosevkinsMichi]
+family  = 'Iosevkins Michi'
+spacing = 'quasi-proportional'
+serifs  = 'sans'
+noCvSs  = true
+
+# Ligations:
+exportGlyphNames = false
+noLigation = true
+
+# Inherits:
+variants.inherits = 'buildPlans.Iosevkins'
+weights.inherits  = 'buildPlans.Iosevkins'
+widths.inherits   = 'buildPlans.Iosevkins'
+slopes.inherits   = 'buildPlans.Iosevkins'
+
+
+[buildPlans.IosevkinsMichi.variants.design]
+# Capitals:
+capital-i = 'serifless'
+capital-j = 'flat-hook-serifless'
+
+# Minuscules:
+i = 'serifless'
+j = 'flat-hook-serifless'
+l = 'serifless'
+
+# Symbols:
+paren = 'normal'
+
+[buildPlans.IosevkinsMichi.variants.italic]
+# Capitals:
+capital-j = 'serifless'

@@ -41,11 +41,10 @@ jobs:
       - name: Setup
         run: |
           cat src/*.toml > lib/iosevka/private-build-plans.toml
-          cd lib/iosevka
-          npm install
+          npm --prefix lib/iosevka install
       - name: Build
         run: |
-          npm run build -- ttf::${{ matrix.fontname }}
+          npm --prefix lib/iosevka run build -- ttf::${{ matrix.fontname }}
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.fontname }}

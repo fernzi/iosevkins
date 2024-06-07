@@ -1,11 +1,13 @@
 # Iosevkins
 
+[![Release](https://img.shields.io/github/v/release/fernzi/iosevkins?label=Version)][url-rl]
 [![License](https://img.shields.io/github/license/fernzi/iosevkins?label=License)](LICENSE)
 [![CI](https://github.com/fernzi/iosevkins/actions/workflows/ci.yaml/badge.svg)][url-ci]
 
 My very own customized version of the free [Iosevka][url-io] font.
 It's meant for code, terminals, prose, verse, and mostly just Emacs.
 
+[url-rl]: https://github.com/fernzi/iosevkins/releases
 [url-io]: https://typeof.net/Iosevka/
 [url-ci]: https://github.com/fernzi/iosevkins/actions/workflows/ci.yaml
 

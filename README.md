@@ -21,6 +21,15 @@ and it rather completely conforms to my entirely subjective
 I do keep it aesthetically consistent though, and
 would describe it as kinda futuristic, or even sci-fi looking.
 
+<picture>
+ <source
+  media="(prefers-color-scheme: dark)"
+  srcset="doc/sample.dark.svg" />
+ <img
+  alt="Font Sample"
+  src="doc/sample.light.svg" />
+</picture>
+
 The general style of Iosevkins should be round and precise,
 using the (al)most rounded, simplest shape variants in Iosevka.
 The roman glyphs avoid spurs on most letters, in favour of corners,

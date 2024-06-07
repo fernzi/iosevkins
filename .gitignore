@@ -8,4 +8,5 @@
 !/.github/workflows/*.yaml
 !/etc/ci/*
 
+!/doc/**.svg
 !*.toml

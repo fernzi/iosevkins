@@ -70,6 +70,7 @@ jobs:
       - name: Package
         run: |
           for d in */*; do
+            printf 'Creating `%s` package...\n' "$d"
             zip -jr "${d//\/TTF/}-${GITHUB_REF_NAME#v}.zip" "$d"
           done
       - name: Release
